@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;/*ขอบบน ขอบล่าง*/
+  box-sizing: border-box; 
+}
+
+body {
+  background-color: #161616;
+}
+
+.logotypro{
+  width: 30%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.logocpf {
+  width: 40%;
+  padding:0px;
+  margin: 0px;
+  align-items: center;
+}
+
+p{
+  font-size: 15px;
+  color: #fff;
+  padding: 0px 15px;
+  margin: 2px;
+}
+
+h{
+  font-size: 25px;
+  color: #4004cb;
+  padding: 0px 0px;
+  margin: 0px;
+}
+
+h2{
+  font-size: 17px;
+  margin: 2px 30px;
+  padding: 5px;
+  font-weight: bolder;
+  color: #4b19c2; 
+}
+
+h3{
+  font-size: 15px;
+  margin: 2px 30px;
+  padding: 5px;
+  font-weight: bolder;
+  color: #f1f113; 
+ }
+
+h4 {
+  font-size: 14px;
+  margin: 0px 2px;
+  padding: 12px 5px 5px;
+  font-weight: bolder;
+  color: #dae31f; 
+}
+h5 {
+  font-size: 15px;
+  margin: 0px 2px;
+  padding: 12px 5px 5px;
+  font-weight: bolder;
+  color: #f72233; 
+}
+
+.p2 {
+  font-size: 12px;
+  margin: 0px 15px;
+  padding: 0px;
+  color: #fbfafa;
+}
+
+
+/************container***********************/
+
+.container1 {
+  padding: 5px 5px;
+  margin: 1px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #143c11;
+}
+.container2 {
+  padding: 5px 5px;
+  margin: 1px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #074489;
+}
+.container3 {
+  padding: 5px 5px;
+  margin: 1px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #04833f;
+}
+.container4 {
+  padding: 5px 5px;
+  margin: 1px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #04833f;
+}
+.container5 {
+  padding: 5px 5px;
+  margin: 1px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9ab407;
+}
+
+/******************************hover botton*********************/
+.bt {
+  margin: 2px;
+  padding: 2px;
+  font-size: 11px;
+  font-weight: bolder;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 2px;
+}
+
+.bt::after {
+  padding: -1%;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #240be1;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+}
+
+.bt::before {
+  content: "";
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #ff00c8,
+      #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 100%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+/* hover */
+.bt:hover::before {
+  opacity: 1;
+}
+
+.bt:active:after {
+  background: transparent;
+}
+
+.bt:active {
+  color: #000;
+  font-weight: bolder;
+}
+
+
+/*****************************slick*****************************/
+.slideshow{
+  position: relative;
+  width: 95%;
+  height: 200px;
+  margin: 10px;
+  margin-top: 10px;
+  
+}
+
+.items{
+  width: 80%;
+  height:200px; 
+   
+  }
+
+.items img{
+  width: 100%;
+  height:200px;
+  object-fit: cover;
+}
+
+.slideshow .slick-prev{
+  width: 20px;
+  height:40px;
+  position: absolute;
+  padding: 2px;
+  top: 40%;
+  left: 0px;
+  z-index: 10; 
+  border-radius:2px;
+  color: #ffffff;
+  background-color: #051e9c;
+  border: 2px;
+}
+
+.slideshow .slick-next{
+  width: 20px;
+  height:40px;
+  position: absolute;  
+  padding: 2px;
+  top: 40%;
+  right: 0px;
+  z-index: 10;
+  border-radius:2px;
+  color: #ffffff;
+  background-color: #051e9c; 
+  border: 2px;
+}
+
+.slideshow .slick-dots{
+  position: relative;
+  bottom: 12px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.slideshow .slick-dots li{
+  list-style: none;
+  margin: 0 3px;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+}  
+
+.slideshow .slick-active{
+  background: #251cce !important;
+}
+
+
+/********************************************************/
+
+.flex-content{
+  display: flex;
+  margin: 2px;
+  padding: 0px; 
+}
+
+.flex00{
+  width: 50%;
+  
+}
+.flex01{
+  width: 100%;
+}
+.flex02{
+  width: 100%;
+}
+
+.flex-content img{
+  width: 100%;
+}
+
+
+
+
+hr{
+  color: #ffffff;
+ }
+
